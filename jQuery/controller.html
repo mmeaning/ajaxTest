@@ -1,0 +1,41 @@
+<html>
+    <header>
+        <!-- <style>
+            .dark-mode{
+                background-color: black;
+                color: white;
+            }
+        </style> -->
+    </header>
+    <body class="dark-mode">
+        <ul>
+            <li>test2</li>
+        </ul>
+        <ul class="foo">
+            <li>test</li>
+        </ul>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            (($) => {
+                $('ul.foo').click(function() {
+                    $('li', this).css('background-color', 'red');
+                });
+            })(jQuery);
+            //클릭하면 다크모드가 풀림
+        //     $(document).ready(function(){
+        //         $("body").on("click", function() {
+        //         $("body").removeClass("dark-mode");
+        //         $(this).addClass();
+        //     });
+        // });
+
+        //배경검정 글씨 흰색
+        (($) => {
+            $("body").ready(function (){
+                $("body", this).css("background-color", "black").css("color", "white");
+            });
+        })(jQuery);
+
+        </script>
+    </body>
+</html>

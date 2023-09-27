@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed Sep 27 10:35:42 KST 2023
+org.eclipse.jst.jee.server\:AjaxAPI=D\:\\apache-tomcat-9.0.73\\wtpwebapps\\AjaxAPI
+org.eclipse.jst.jee.server\:PublicDataUse=D\:\\apache-tomcat-9.0.73\\wtpwebapps\\PublicDataUse
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\user1\\.m2\\repository\\org\\springframework\\spring-web\\5.2.9.RELEASE\\spring-web-5.2.9.RELEASE.jar=D\:\\apache-tomcat-9.0.73\\wtpwebapps\\PublicDataUse\\WEB-INF\\lib\\spring-web-5.2.9.RELEASE.jar

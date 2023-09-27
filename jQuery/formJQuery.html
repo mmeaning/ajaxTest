@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <p>
+            <input type="text" />
+            <span></span>
+        </p>
+        <script>
+            $("input")
+            .focus(function(){
+                $(this).next("span").html("focus");
+            })
+            .blur(function(){
+                $(this).next("span").html("blur");
+            })
+            .select(function() {
+                $(this).next("span").html("select");
+            })
+            .change(function(e) {
+                alert("change!! " + $(e.target).val());
+            });
+        </script>
+    </body>
+</html>

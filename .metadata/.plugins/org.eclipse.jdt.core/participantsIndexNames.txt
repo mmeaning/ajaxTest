@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\ajaxTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3167710178.index
+\AjaxAPI\src\main\java
+D:\ajaxTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2174280111.index
+\PublicDataUse\src\main\java

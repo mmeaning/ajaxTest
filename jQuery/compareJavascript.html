@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function addEvent(target, eventType, eventHandler, useCapture){
+                if(target.addEventListener){
+                    //W3C DOM
+                    target.addEventListener(
+                        eventType,
+                        eventHandler,
+                        useCapture ? useCapture : false
+                    );
+                }else if ( target.attachEvent){
+                    //IE DOM
+                    let r = target.attachEvent("on" + eventType, eventHandler);
+                }
+            }
+            function clickHandler(event){
+                let nav = document.getElementById("navigation");
+                for(let i = 0; i <nav.childNodes.length; i++){
+                    let child = nav.childNodes[i];
+                    if(child.nodeType == 3) continue;
+                    child.className = "";
+                }
+                event.target.className = "selected";
+            }
+    
+            addEvent(window, "load", function(eventObj){
+                let nav = document.getElementById("navigation");
+                for(let i = 0; i <nav.childNodes.length; i++){
+                    let child = nav.childNodes[i];
+                    if(child.nodeType == 3) continue;
+                    addEvent(child, "click", clickHandler);
+                }
+            });
+        </script>
+        <style type="text/css">
+            #navigation li {
+                list-style: none;
+                float: left;
+                padding: 5px;
+            }
+            #nacigation {
+                cursor: point;
+            }
+            #navigation .selected {
+                background-color: red;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="navigation">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li class="selected">jQuery</li>
+            <li>PHP</li>
+            <li>mySql</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\ajaxTest\.metadata\.plugins\org.eclipse.jdt.core
+2823188764.index
+2876813575.index
+1865797976.index
+1737531499.index
+3800235528.index

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <a id="tutorial" href="http://jquery.com" target="_self">jQuery</a>
+        <script 
+        type="text/javascript" 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+        </script>
+        <script>
+            let tutorial = document.getElementById("tutorial");
+
+            tutorial.setAttribute("href", "http://www.google.com");
+            tutorial.setAttribute("target", "_blank");
+            tutorial.style.color = "red";
+
+        </script>
+    </body>
+</html>
